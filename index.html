@@ -3,31 +3,44 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Aman Kumar | Software Engineer & SRE</title>
+  <title>Aman Kumar | IT Analyst - SRE</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header class="hero">
+  <div class="hero-content">
   <img src="assets/profile.jpg" class="profile-img">
   <h1>Aman Kumar</h1>
-  <h2>IT ANalyst - Site Reliability Engineer</h2>
-  <p>
+  <h2>IT Analyst - Site Reliability Engineer</h2>
+  <p class="tagline">
     Building reliable, scalable systems using Python automation,
     observability engineering, and cloud-native practices.
   </p>
-  <a class="btn" href="https://www.linkedin.com/in/aman-kumar-ka" target="_blank">
+   <div class="hero-buttons">
+  <a class="btn-primary" href="https://www.linkedin.com/in/aman-kumar-ka" target="_blank">
     View LinkedIn
   </a>
+   </div>
+  </div>    
 </header>
 
-<section class="stats">
-  <div><h3>6+</h3><p>Years Experience</p></div>
-  <div><h3>60%</h3><p>Manual Work Reduced</p></div>
-  <div><h3>99.9%</h3><p>Production Uptime</p></div>
+<section class="stats reveal">
+  <div class="stat-card">
+    <h3>6+</h3>
+    <p>Years Experience</p>
+  </div>
+  <div class="stat-card">
+    <h3>60%</h3>
+    <p>Manual Work Reduced</p>
+  </div>
+  <div class="stat-card">
+    <h3>99.9%</h3>
+    <p>Production Uptime</p>
+  </div>
 </section>
 
-<section>
+<section class="reveal">
   <h2>About Me</h2>
  <p>
     I am a <strong>Site Reliability Engineer</strong>
@@ -53,7 +66,7 @@
   </p>
 </section>
 
-<section>
+<section class="reveal">
   <h2>Core Skills</h2>
   <div class="cards">
     <div class="card">
@@ -75,13 +88,13 @@
   </div>
 </section>
 
-<section>
+<section class="reveal">
   <h2>Work Experience</h2>
 
-  <div class="timeline">
+  <div class="experience">
     <h4>Tata Consultancy Services (TCS)</h4>
-    <p><em>IT Analyst – Site Reliability Engineer</em></p>
-    <p><strong>Aug 2019 – Present</strong></p>
+    <span><em>IT Analyst – Site Reliability Engineer</em></span>
+    <span><strong>Aug 2019 – Present</strong></span>
 
     <ul>
       <li>
@@ -124,7 +137,7 @@
   </div>
 </section>
 
-<section>
+<section class="reveal">
   <h2>Projects</h2>
   <div class="cards">
     <div class="card">
@@ -146,7 +159,7 @@
   </div>
 </section>
 
-<section>
+<section class="reveal">
   <h2>Certifications</h2>
   <ul>
     <li>AWS Certified AI Practitioner</li>
@@ -158,6 +171,17 @@
   <p>📧 kaman4119@gmail.com | 📍 Noida, India</p>
 </footer>
 
+<script>
+  const reveals = document.querySelectorAll('.reveal');
+  window.addEventListener('scroll', () => {
+    reveals.forEach(r => {
+      const top = r.getBoundingClientRect().top;
+      if (top < window.innerHeight - 100) r.classList.add('active');
+    });
+  });
+</script>
+
 </body>
 </html>
+
 
