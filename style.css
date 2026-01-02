@@ -139,3 +139,28 @@ footer {
   transform: translateY(0);
 }
 
+.linkedin-btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 14px 32px;
+
+  background-color: #0a66c2; /* LinkedIn blue */
+  color: #ffffff;
+
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+
+  border-radius: 4px; /* 👈 square look (not pill) */
+  border: none;
+
+  transition: background-color 0.3s ease,
+              transform 0.2s ease,
+              box-shadow 0.2s ease;
+}
+
+.linkedin-btn:hover {
+  background-color: #004182;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(10, 102, 194, 0.35);
+}
